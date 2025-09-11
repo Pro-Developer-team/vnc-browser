@@ -68,30 +68,33 @@ You can customize the settings of the Docker container by passing environment va
 - Adding command options for xterm: `XTERM_OPTIONS="-leftbar"`
 
 ### Available Variables ⚙️
-- `VNC_SCREEN` (default: `0`): Screen number for VNC.
-- `VNC_DISPLAY` (default: `0`): Display number for VNC.
-- `VNC_RESOLUTION` (default: `1280x720`): Resolution of the VNC display.
-- `VNC_PASSWORD` (default: `money4band`): Password for VNC access.
-- `VNC_PORT` (default: `5900`): Port for VNC connections.
-- `NOVNC_WEBSOCKIFY_PORT` (default: `6080`): Port for noVNC web access.
-- `STARTING_WEBSITE_URL` (default: `https://www.google.com`): Initial website URL opened in the browser if auto startup is true.
-- `LANG` (default: `en_US.UTF-8`): Language setting for the container.
-- `LC_ALL` (default: `C.UTF-8`): Locale setting for the container.
-- `CUSTOMIZE` (default: `false`): Toggle for running custom scripts.
-- `AUTO_START_BROWSER` (default: `true`): Automatically start the browser.
-- `AUTO_START_XTERM` (default: `true`): Automatically start xterm.
-- `AUTO_START_WM` (default: `true`): Automatically start window manager (fluxbox).
-- `AUTO_START_X11VNC` (default: `true`): Automatically start x11vnc.
-- `AUTO_START_XVFB` (default: `true`): Automatically start xvfb.
-- `AUTO_START_NOVNC` (default: `true`): Automatically start noVNC (websockify).
-- `CUSTOM_ENTRYPOINTS_DIR` (default: `/app/custom_entrypoints_scripts`): Directory for custom entry point scripts.
-- `DEBIAN_FRONTEND` (default: `noninteractive`): Frontend setting for Debian-based installations.
-- `BROWSER_OPTIONS` (default: ``): Additional command options to provide to browser start.
-- `X11VNC_OPTIONS` (default: ``): Additional command options to provide to x11vnc start.
-- `XVFB_OPTIONS` (default: ``): Additional command options to provide to xvfb start.
-- `WM_OPTIONS` (default: ``): Additional command options to provide to windows manager (fluxbox) start.
-- `NOVNC_OPTIONS` (default: ``): Additional command options to provide to noVNC (websockify) start.
-- `XTERM_OPTIONS` (default: ``): Additional command options to provide to xterm start.
+| Variable               | Default                           | Description |
+|------------------------|-----------------------------------|-------------|
+| VNC_SCREEN             | 0                                 | Screen number for VNC |
+| VNC_DISPLAY            | 0                                 | Display number for VNC |
+| VNC_RESOLUTION         | 1280x720                          | Resolution of the VNC display |
+| VNC_PASSWORD           | money4band                        | Password for VNC access |
+| VNC_PORT               | 5900                              | Port for VNC connections |
+| NOVNC_WEBSOCKIFY_PORT  | 6080                              | Port for noVNC web access |
+| STARTING_WEBSITE_URL   | https://www.google.com            | Initial website URL opened in the browser if auto startup is true |
+| LANG                   | en_US.UTF-8                       | Language setting for the container |
+| LC_ALL                 | C.UTF-8                           | Locale setting for the container |
+| CUSTOMIZE              | false                             | Toggle for running custom scripts |
+| AUTO_START_BROWSER     | true                              | Automatically start the browser |
+| AUTO_START_XTERM       | true                              | Automatically start xterm |
+| AUTO_START_WM          | true                              | Automatically start window manager (fluxbox) |
+| AUTO_START_X11VNC      | true                              | Automatically start x11vnc |
+| AUTO_START_XVFB        | true                              | Automatically start xvfb |
+| AUTO_START_NOVNC       | true                              | Automatically start noVNC (websockify) |
+| CUSTOM_ENTRYPOINTS_DIR | /app/custom_entrypoints_scripts   | Directory for custom entry point scripts |
+| DEBIAN_FRONTEND        | noninteractive                    | Frontend setting for Debian-based installations |
+| BROWSER_OPTIONS        |                                   | Additional command options to provide to browser start |
+| X11VNC_OPTIONS         |                                   | Additional command options to provide to x11vnc start |
+| XVFB_OPTIONS           |                                   | Additional command options to provide to xvfb start |
+| WM_OPTIONS             |                                   | Additional command options to provide to window manager (fluxbox) start |
+| NOVNC_OPTIONS          |                                   | Additional command options to provide to noVNC (websockify) start |
+| XTERM_OPTIONS          |                                   | Additional command options to provide to xterm start |
+
 
 - Example:
 ```sh
